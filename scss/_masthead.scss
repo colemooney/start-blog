@@ -2,9 +2,14 @@
 header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
   margin-bottom: 50px;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background: no-repeat center center;
   background-color: $gray-600;
-  background-attachment: scroll;
+  // background-attachment: scroll;
   position: relative;
   @include background-cover;
   .overlay {
@@ -15,6 +20,7 @@ header.masthead {
     width: 100%;
     background-color: $gray-900;
     opacity: 0.5;
+    
   }
   .page-heading,
   .post-heading,

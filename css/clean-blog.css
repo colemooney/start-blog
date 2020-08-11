@@ -140,7 +140,7 @@ img::-moz-selection {
     transition: background-color 0.2s;
     /* Force Hardware Acceleration in WebKit */
     transform: translate3d(0, 0, 0);
-    /* -webkit-backface-visibility: hidden; */
+    -webkit-backface-visibility: hidden;
   }
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
@@ -170,9 +170,13 @@ img::-moz-selection {
 
 header.masthead {
   margin-bottom: 50px;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background: no-repeat center center;
   background-color: #868e96;
-  background-attachment: scroll;
   position: relative;
   background-size: cover;
 }
